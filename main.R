@@ -1,0 +1,5 @@
+library(lmtest)
+data <- read.csv("data.csv")
+model <- lm(sales ~ price + advertising, data=data)
+summary(model)
+coeftest(model)
